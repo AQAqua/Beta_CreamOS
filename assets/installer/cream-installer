@@ -1,0 +1,21 @@
+#!/bin/sh
+set -eu
+
+if ! command -v calamares-install-debian >/dev/null 2>&1; then
+    case "${LANG:-}" in
+        zh_CN*|zh_SG*) message="此 Live 会话中没有可用的 Calamares 图形安装程序。" ;;
+        *) message="The Calamares graphical installer is not available in this live session." ;;
+    esac
+    if command -v zenity >/dev/null 2>&1; then
+        case "${LANG:-}" in
+            zh_CN*|zh_SG*) title="CreamOS 安装程序" ;;
+            *) title="CreamOS Installer" ;;
+        esac
+        zenity --error --title="$title" --text="$message"
+    else
+        printf 'Error: %s\n' "$message" >&2
+    fi
+    exit 1
+fi
+
+exec calamares-install-debian

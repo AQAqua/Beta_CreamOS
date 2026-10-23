@@ -1,0 +1,36 @@
+panel_items = LTSC
+panel_size = 100% 38
+panel_position = bottom center horizontal
+panel_margin = 12 10
+panel_padding = 12 5 8
+panel_background_id = 1
+autohide = 0
+strut_policy = follow_size
+taskbar_mode = multi_desktop
+task_icon = 1
+task_text = 1
+task_maximum_size = 180 32
+task_font = Noto Sans CJK SC 10
+task_active_background_id = 2
+clock_format = %H:%M
+clock_font = Noto Sans CJK SC 10
+clock_padding = 8 0
+systray_padding = 6 0 6
+launcher_padding = 6 4 6
+launcher_icon_size = 24
+mouse_middle = none
+mouse_right = none
+mouse_scroll_up = toggle
+mouse_scroll_down = toggle
+
+# Panel background
+rounded = 12
+border_width = 0
+background_color = #fffdf7 94
+border_color = #d8d3c9 0
+
+# Active task background
+rounded = 10
+border_width = 0
+background_color = #ebe6f4 100
+border_color = #d8d3c9 0

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Material 3
+Comment=Material-inspired GTK theme for CreamOS
+Encoding=UTF-8
+
+[Gtk]
+0=gtk-3.0

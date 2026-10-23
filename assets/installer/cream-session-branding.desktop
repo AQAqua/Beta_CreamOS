@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=CreamOS Session Branding
+Comment=Apply the CreamOS XFCE theme and wallpaper
+Exec=/usr/local/bin/cream-session-branding
+OnlyShowIn=XFCE;
+NoDisplay=true
+StartupNotify=false
+X-GNOME-Autostart-Delay=3

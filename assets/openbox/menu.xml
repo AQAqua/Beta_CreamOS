@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+  <menu id="root-menu" label="OpenCream">
+    <item label="Terminal">
+      <action name="Execute"><command>xfce4-terminal</command></action>
+    </item>
+    <item label="Files">
+      <action name="Execute"><command>pcmanfm</command></action>
+    </item>
+    <separator />
+    <item label="Restart Openbox">
+      <action name="Restart" />
+    </item>
+    <item label="Log out">
+      <action name="Exit" />
+    </item>
+  </menu>
+</openbox_menu>

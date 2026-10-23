@@ -1,0 +1,18 @@
+#!/bin/sh
+set -eu
+
+DESKTOP_DIR=$(xdg-user-dir DESKTOP)
+if [ -z "$DESKTOP_DIR" ]; then
+    DESKTOP_DIR="$HOME/Desktop"
+fi
+
+mkdir -p "$DESKTOP_DIR"
+DESKTOP_ENTRY="$DESKTOP_DIR/CreamOS Installer.desktop"
+install -m 0755 /usr/share/applications/calamares-install-debian.desktop "$DESKTOP_ENTRY"
+
+if [ "${XDG_CURRENT_DESKTOP:-}" = XFCE ]; then
+    gio set --type=string "$DESKTOP_ENTRY" metadata::trusted true
+    gio set --type=string "$DESKTOP_ENTRY" metadata::xfce-exe-checksum \
+        "$(sha256sum "$DESKTOP_ENTRY" | cut -f1 -d' ')"
+    touch "$DESKTOP_ENTRY"
+fi

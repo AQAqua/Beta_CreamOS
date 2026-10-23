@@ -1,0 +1,30 @@
+---
+componentName: creamos
+welcomeStyleCalamares: true
+welcomeExpandingLogo: true
+windowExpanding: normal
+windowSize: 800px,580px
+windowPlacement: center
+
+strings:
+    productName:         CreamOS
+    shortProductName:    CreamOS
+    version:             0.0.1
+    shortVersion:        0.0.1
+    versionedName:       CreamOS 0.0.1
+    shortVersionedName:  CreamOS 0.0.1
+    bootloaderEntryName: CreamOS
+
+sidebar: widget
+navigation: widget
+
+images:
+    productLogo:         creamos-logo.svg
+    productIcon:         creamos-logo.svg
+    productWelcome:      creamos-welcome.svg
+
+style:
+   SidebarBackground:        "#6750a4"
+   SidebarText:              "#FFFFFF"
+   SidebarTextCurrent:       "#FFFFFF"
+   SidebarBackgroundCurrent: "#4F3D83"

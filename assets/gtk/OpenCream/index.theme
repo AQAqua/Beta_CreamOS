@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=OpenCream
+Comment=Warm, rounded GTK theme for OpenCream OS
+Encoding=UTF-8
+
+[Gtk]
+0=gtk-3.0

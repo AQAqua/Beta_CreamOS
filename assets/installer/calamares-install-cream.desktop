@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Install CreamOS
+Name[zh_CN]=安装 CreamOS
+GenericName=CreamOS Graphical Installer
+GenericName[zh_CN]=CreamOS 图形安装程序
+Exec=cream-installer
+Comment=Install CreamOS on this computer
+Comment[zh_CN]=在此电脑上安装 CreamOS
+Keywords=cream;system;install;installer
+Icon=creamos-logo
+Terminal=false
+Categories=Qt;System;
+StartupWMClass=calamares
+StartupNotify=True

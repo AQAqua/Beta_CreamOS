@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Texture
+Comment=Textured, tactile GTK theme for CreamOS
+Encoding=UTF-8
+
+[Gtk]
+0=gtk-3.0

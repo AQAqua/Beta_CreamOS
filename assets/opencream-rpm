@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+
+if [ "$#" -eq 0 ]; then
+    printf '%s\n' "Usage: opencream-rpm [rpm arguments]" >&2
+    printf '%s\n' "Example: doas opencream-rpm -Uvh ./package.rpm" >&2
+    exit 2
+fi
+
+if [ "$(id -u)" -ne 0 ]; then
+    printf '%s\n' "Error: use doas or log in as root to install/remove RPM packages." >&2
+    exit 1
+fi
+
+exec rpm "$@"

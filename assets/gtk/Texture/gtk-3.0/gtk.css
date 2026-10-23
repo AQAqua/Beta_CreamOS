@@ -1,0 +1,62 @@
+@define-color theme_bg_color #e8e0d1;
+@define-color theme_fg_color #352b20;
+@define-color theme_base_color #f8f1e4;
+@define-color theme_text_color #352b20;
+@define-color theme_selected_bg_color #8a5635;
+@define-color theme_selected_fg_color #fffaf2;
+@define-color accent_color #8a5635;
+@define-color accent_bg_color #8a5635;
+@define-color accent_fg_color #fffaf2;
+
+window,
+dialog,
+popover,
+menu {
+  background-color: @theme_bg_color;
+  color: @theme_fg_color;
+}
+
+button {
+  background-image: linear-gradient(to bottom, #f7f0e4, #ded2be);
+  color: @theme_fg_color;
+  border: 1px solid #bca98e;
+  border-radius: 8px;
+  box-shadow: inset 0 1px #fffaf0, 0 1px #c4b39a;
+  padding: 6px 14px;
+}
+
+button:hover {
+  background-image: linear-gradient(to bottom, #fff8ec, #e8dac3);
+}
+
+button:checked,
+button:active {
+  background-image: none;
+  background-color: @accent_bg_color;
+  color: @accent_fg_color;
+  box-shadow: inset 0 1px 3px alpha(#352b20, 0.35);
+}
+
+entry,
+textview,
+spinbutton,
+combobox {
+  background-color: @theme_base_color;
+  color: @theme_text_color;
+  border: 1px solid #bca98e;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px alpha(#352b20, 0.12);
+  padding: 6px 9px;
+}
+
+headerbar,
+toolbar {
+  background-image: linear-gradient(to bottom, #f2eadb, #ded2be);
+  border: 0;
+  box-shadow: inset 0 1px #fffaf0;
+}
+
+selection {
+  background-color: @theme_selected_bg_color;
+  color: @theme_selected_fg_color;
+}

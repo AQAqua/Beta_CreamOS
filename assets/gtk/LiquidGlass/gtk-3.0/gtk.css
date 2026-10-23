@@ -1,0 +1,59 @@
+@define-color theme_bg_color #e8f2f5;
+@define-color theme_fg_color #18313b;
+@define-color theme_base_color #f7fcfd;
+@define-color theme_text_color #18313b;
+@define-color theme_selected_bg_color #187d91;
+@define-color theme_selected_fg_color #ffffff;
+@define-color accent_color #187d91;
+@define-color accent_bg_color #187d91;
+@define-color accent_fg_color #ffffff;
+
+window,
+dialog,
+popover,
+menu {
+  background-color: alpha(@theme_bg_color, 0.94);
+  color: @theme_fg_color;
+}
+
+button {
+  background-image: linear-gradient(to bottom, alpha(#ffffff, 0.82), alpha(#d7e9ee, 0.72));
+  color: @theme_fg_color;
+  border: 1px solid alpha(#ffffff, 0.9);
+  border-radius: 16px;
+  padding: 6px 14px;
+}
+
+button:hover {
+  background-image: linear-gradient(to bottom, alpha(#ffffff, 0.94), alpha(#c9e1e8, 0.86));
+}
+
+button:checked,
+button:active {
+  background-image: none;
+  background-color: @accent_bg_color;
+  color: @accent_fg_color;
+}
+
+entry,
+textview,
+spinbutton,
+combobox {
+  background-color: alpha(@theme_base_color, 0.88);
+  color: @theme_text_color;
+  border: 1px solid alpha(#8fb5c0, 0.72);
+  border-radius: 12px;
+  padding: 6px 9px;
+}
+
+headerbar,
+toolbar {
+  background-image: linear-gradient(to bottom, alpha(#ffffff, 0.84), alpha(#dcebef, 0.76));
+  border: 0;
+  box-shadow: inset 0 1px alpha(#ffffff, 0.9);
+}
+
+selection {
+  background-color: @theme_selected_bg_color;
+  color: @theme_selected_fg_color;
+}

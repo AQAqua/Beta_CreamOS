@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+
+WALLPAPER=/usr/share/backgrounds/creamos/creamos-wallpaper.svg
+
+xfconf-query -c xfce4-desktop \
+    -p /backdrop/screen0/monitor0/last-image --set "$WALLPAPER"
+xfconf-query -c xfce4-desktop \
+    -p /backdrop/screen0/monitor0/workspace0/last-image --set "$WALLPAPER"
+xfconf-query -c xfce4-desktop \
+    -p /backdrop/screen0/monitor0/workspace0/image-style --set 5
