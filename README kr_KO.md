@@ -47,9 +47,9 @@ OPENCREAM_BOOT_ISO="$PWD/build/CreamOS_installer.iso" sh scripts/run-qemu.sh
 
 호환되는 Debian amd64 시스템을 사용하면 데스크톱 설치 스크립트에서 기존 계정의 데스크톱 및 테마를 설치할 수도 있습니다. Chrome이 아직 설치되어 있지 않은 경우 Google에서 Google Chrome을 다운로드합니다.
 
-``sh
+```sh
 sudo sh scripts/install-opencream.sh USERNAME
-``
+```
 
 APT는 시스템 패키지 관리자입니다. opencream-rpm은 별도의 RPM 패키지 작업을 제공합니다. RPM 종속성은 APT 종속성으로 변환되지 않으며 RPM 패키지는 데비안과 호환되지 않을 수 있습니다.
 
@@ -57,12 +57,12 @@ APT는 시스템 패키지 관리자입니다. opencream-rpm은 별도의 RPM �
 
 QEMU는 설치된 시스템의 부트 로더 대신 제공된 커널과 initrd를 시작할 수 있습니다.
 
-``sh
+```sh
 OPENCREAM_KERNEL=/path/to/bzImage\
 OPENCREAM_INITRD=/path/to/initramfs\
 OPENCREAM_KERNEL_APPEND='root=/dev/vda2 rootwait rw'\
 sh scripts/run-qemu.sh
-``
+```
 
 루트 파티션은 설치 레이아웃에 따라 다릅니다. 먼저 기본 데비안 커널에서 확인하십시오. 사용자 지정 커널에는 필요한 virtio 디스크, 파일 시스템 및 콘솔 드라이버가 포함되어 있어야 합니다. `OPENCREAM_KERNEL`을 설정하는 경우 `OPENCREAM_KERNEL_APPEND`가 필요합니다.
 
