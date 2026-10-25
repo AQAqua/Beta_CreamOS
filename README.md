@@ -1,9 +1,9 @@
 <div align="center">
   <b>🌐 Languages:</b> 
-  <a href="README_zh_CN.md">简体中文</a> | 
-  <a href="README_zh_TW.md">繁體中文</a> | 
-  <a href="README_js_JP.md">日本語</a> | 
-  <a href="README_kr_KO.md">한국어</a>
+  <a href="README zh_CN.md">简体中文</a> | 
+  <a href="README zh_TW.md">繁體中文</a> | 
+  <a href="README js_JP.md">日本語</a> | 
+  <a href="README kr_KO.md">한국어</a>
 </div>
 
 ---
