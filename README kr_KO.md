@@ -1,3 +1,12 @@
+<div align="center">
+ <b>🌐Languages:</b>
+ <a href="README.md">English</a> |
+ <a href="README_zh_CN.md">简体中文</a> |
+ <a href="README_zh_TW.md">繁體中文</a> |
+ <a href="README_js_JP.md">日本語</a> |
+ <a href="README.md">English</a>
+</div>
+
 ---
 #CreamOS b0.0.01
 
