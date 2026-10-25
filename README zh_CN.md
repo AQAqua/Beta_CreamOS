@@ -48,8 +48,8 @@ OPENCREAM_BOOT_ISO="$PWD/build/CreamOS_installer.iso" sh scripts/run-qemu.sh
 
 在兼容的 Debian amd64 系统上，桌面设置脚本还可以为现有帐户安装桌面和主题。当 Chrome 尚未安装时，它会从 Google 下载 Google Chrome：
 
-````嘘
-sudo sh 脚本/install-opencream.sh 用户名
+````sh
+sudo sh script/install-opencream.sh [用户名]
 ````
 
 APT 是系统包管理器。 `opencream-rpm` 提供单独的 RPM 包操作；它不会将 RPM 依赖项转换为 APT 依赖项，并且 RPM 软件包可能与 Debian 不兼容。
